@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notedetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbaarofnotedetail"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Title displayed here"
+            android:id="@+id/titleofnotedetail"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:background="#CFC6C6"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:hint="Enter your Notes here"
+        android:layout_below="@id/toolbaarofnotedetail"
+        android:padding="15dp"
+        android:id="@+id/contentofnotedetail"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity = "bottom|end"
+        android:id="@+id/gotoeditnote"
+        android:src="@drawable/icon_edit"
+        app:maxImageSize="50dp"
+        android:backgroundTint="#A2ABDF"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to notes"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/getbacktonotes"
+        android:backgroundTint="@color/color3"
+        android:drawableLeft="@drawable/icon_notes"
+
+        />
+
+</RelativeLayout>

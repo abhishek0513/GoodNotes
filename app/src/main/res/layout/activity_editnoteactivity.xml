@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#935652"
+    tools:context=".editnoteactivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="#DF3B07"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="14dp"
+        android:layout_above="@id/cardView2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We are currently working on the feature to edit the note. It is the beta version of our app and will soon come with the feature to edit a note."
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#DF3B07"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="14dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you want to edit the note, you are requested to create a new note and copy the content of the previous note, then paste it into the new note and make the changes you want."
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/backtohome"
+        android:src="@drawable/icon_home"
+        app:maxImageSize="45dp"
+        android:backgroundTint="#A2ABDF" />
+
+</RelativeLayout>
