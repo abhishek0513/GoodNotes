@@ -57,6 +57,17 @@
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to notes"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/getbacktothenotes"
+        android:backgroundTint="@color/color3"
+        android:drawableLeft="@drawable/icon_notes"
 
+        />
 
 </RelativeLayout>

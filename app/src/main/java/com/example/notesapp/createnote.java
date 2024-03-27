@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ import java.util.Map;
 public class createnote extends AppCompatActivity {
     EditText mcreatetitleofnote, mcreatecontentofnote;
     FloatingActionButton msavenote;
+    Button mgetbacktothenotes;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
     FirebaseFirestore firebaseFirestore;
@@ -40,6 +42,7 @@ public class createnote extends AppCompatActivity {
         msavenote= findViewById(R.id.savenote);
         mcreatecontentofnote = findViewById(R.id.createcontentofnote);
         mcreatetitleofnote = findViewById(R.id.createtitleofnote);
+        mgetbacktothenotes = findViewById(R.id.getbacktothenotes);
         Toolbar toolbar = findViewById(R.id.toolbaarcreatenote);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -76,6 +79,15 @@ public class createnote extends AppCompatActivity {
                         }
                     });
                 }
+            }
+        });
+
+        mgetbacktothenotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), notesActivity.class);
+                startActivity(intent);
+//                finish();
             }
         });
 
